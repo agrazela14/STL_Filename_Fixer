@@ -28,28 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.SetRoot = new System.Windows.Forms.Button();
+            this.FixFilenames = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.RootDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
-            // button3
+            // SetRoot
             // 
-            this.button3.Location = new System.Drawing.Point(251, 207);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Set Root";
-            this.button3.UseVisualStyleBackColor = true;
+            this.SetRoot.Location = new System.Drawing.Point(251, 207);
+            this.SetRoot.Name = "SetRoot";
+            this.SetRoot.Size = new System.Drawing.Size(98, 23);
+            this.SetRoot.TabIndex = 0;
+            this.SetRoot.Text = "Set Root";
+            this.SetRoot.UseVisualStyleBackColor = true;
+            this.SetRoot.Click += new System.EventHandler(this.SetRoot_Click);
             // 
-            // button4
+            // FixFilenames
             // 
-            this.button4.Location = new System.Drawing.Point(251, 265);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(98, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Fix Filenames";
-            this.button4.UseVisualStyleBackColor = true;
+            this.FixFilenames.Location = new System.Drawing.Point(251, 265);
+            this.FixFilenames.Name = "FixFilenames";
+            this.FixFilenames.Size = new System.Drawing.Size(98, 23);
+            this.FixFilenames.TabIndex = 1;
+            this.FixFilenames.Text = "Fix Filenames";
+            this.FixFilenames.UseVisualStyleBackColor = true;
+            this.FixFilenames.Click += new System.EventHandler(this.FixFilenames_Click);
             // 
             // label2
             // 
@@ -65,8 +68,8 @@
             // 
             this.ClientSize = new System.Drawing.Size(629, 375);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.FixFilenames);
+            this.Controls.Add(this.SetRoot);
             this.Name = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -79,9 +82,10 @@
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button SetRoot;
+        private System.Windows.Forms.Button FixFilenames;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.FolderBrowserDialog RootDialog;
     }
 }
 

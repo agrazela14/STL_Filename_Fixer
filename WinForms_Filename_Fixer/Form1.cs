@@ -19,12 +19,15 @@ namespace WinForms_Filename_Fixer
 
         private void SetRoot_Click(object sender, EventArgs e)
         {
+            // Set the root folder to do the Renaming on
+            RootDialog.ShowDialog();
+
 
         }
 
         private void FixFilenames_Click(object sender, EventArgs e)
         {
-
+            // Rename all the STL files recursively checking through the root folder
         }
     }
 }
