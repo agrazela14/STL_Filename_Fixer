@@ -16,5 +16,15 @@ namespace WinForms_Filename_Fixer
         {
             InitializeComponent();
         }
+
+        private void SetRoot_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FixFilenames_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
