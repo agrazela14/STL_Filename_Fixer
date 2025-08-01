@@ -25,6 +25,7 @@ namespace WinForms_Filename_Fixer
             // Set the root folder to do the Renaming on
             RootDialog.ShowDialog();
             this.root_directory = RootDialog.SelectedPath;
+            this.Root_TextBox.Text = this.root_directory;
 
         }
 
@@ -33,6 +34,11 @@ namespace WinForms_Filename_Fixer
             // Rename all the STL files recursively checking through the root folder
             System.IO.File.Move($"{this.root_directory}\\Meme.txt", $"{this.root_directory}\\Nomeme.txt");
             //Console.WriteLine($"{this.root_directory}");
+        }
+
+        private void Root_TextBox_TextChanged(object sender, EventArgs e)
+        {
+            this.root_directory = this.Root_TextBox.Text;
         }
     }
 }
