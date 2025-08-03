@@ -26,7 +26,6 @@ namespace WinForms_Filename_Fixer
             RootDialog.ShowDialog();
             this.root_directory = RootDialog.SelectedPath;
             this.Root_TextBox.Text = this.root_directory;
-
         }
 
         private void FixFilenames_Click(object sender, EventArgs e)
