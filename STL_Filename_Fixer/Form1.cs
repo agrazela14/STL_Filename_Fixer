@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinForms_Filename_Fixer
+namespace STL_Filename_Fixer
 {
     public partial class Form1 : Form
     {

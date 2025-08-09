@@ -1,4 +1,4 @@
-﻿namespace WinForms_Filename_Fixer
+﻿namespace STL_Filename_Fixer
 {
     partial class Form1
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinForms_Filename_Fixer
+namespace STL_Filename_Fixer
 {
     internal static class Program
     {
